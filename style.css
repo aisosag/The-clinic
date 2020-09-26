@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Lay out for mobile */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  grid-template-areas:
+    " header header "
+    "content content"
+    "content_2 content_2"
+    "content_3 content_3"
+    "content_4 content_4"
+    "footer footer ";
+}
+
+.header {
+  grid-area: header;
+  background-color: rgb(26, 114, 172);
+  position: sticky;
+  font-size: 19px;
+}
+
+.content {
+  grid-area: content;
+  background-image: url(pics/AdobeStock_55712514_Preview.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(173, 216, 230, 0.5);
+  height: 70vh;
+  margin-top: 40px;
+  font-size: 30px;
+}
+
+.content_2 {
+  grid-area: content_2;
+  margin-top: 40px;
+  background-color: rgba(223, 247, 255, 0.397);
+  font-size: 28px;
+}
+
+.content_3 {
+  grid-area: content_3;
+  background-color: rgba(223, 247, 255, 0.397);
+  color: rgb(26, 114, 172);
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.content_4 {
+  grid-area: content_4;
+  margin-top: 40px;
+  background-color: rgba(223, 247, 255, 0.397);
+  font-size: 28px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(26, 114, 172);
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.container div:nth-child(even) {
+  background-color: ed;
+}
+
+.container div:nth-child(odd) {
+  background-color: gree;
+}
+
+/* Header settings */
+.logo {
+  height: 55px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+  margin-left: 19px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.main-nav li a,
+.main-nav li a:link,
+.main-nav li a:active {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  vertical-align: middle;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid lawngreen;
+}
+
+/* sticky navi */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(26, 114, 172);
+}
+
+
+
+
+/* mobile navi */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon ion-icon {
+  font-size: 200%;
+  color: white;
+}
+
+/* content 1 */
+.things {
+  margin-left: 10%;
+  margin-top: 50px;
+  color: rgb(26, 114, 172);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+.troops button {
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 100px;
+  margin-left: 10%;
+  margin-top: 0.9%;
+  background-color: lawngreen;
+}
+
+/* contect 2 */
+.story {
+  margin-top: 70px;
+  color: rgb(26, 114, 172);
+  font-family: ;
+}
+
+.paragraph {
+  margin-top: 40px;
+  color: rgb(26, 114, 172);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: rgb(26, 114, 172);
+  grid-gap: 6px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.learn-more button {
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 100px;
+  background-color: greenyellow;
+}
+
+/* content 3 */
+.physicians {
+  margin-top: 40px;
+  color: rgb(26, 114, 172);
+}
+
+.doctors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(26, 114, 172);
+  grid-gap: 59px;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.pro-pic {
+  border-radius: 50%;
+}
+
+/* content 4 */
+.contactinfo {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  color: rgb(26, 114, 172);
+  margin-left: 16px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.insurance_plans {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  color: rgb(26, 114, 172);
+}
+
+/* footer */
+.las-las {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  margin-left: 20px;
+}
+
+.address {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* animations */
